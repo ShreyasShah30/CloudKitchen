@@ -5,59 +5,128 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dhunkee Food & Catering</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <!-- Navbar -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">Dhunkee Food & Catering</a>
+            <a class="navbar-brand" href="index.html">Dhunkee Food & Catering</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
-                    <li class="nav-item"><a class="nav-link" href="prices.html">Pricing</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="meals.html">Meal Plans</a></li>
+                    <li class="nav-item"><a class="nav-link" href="legal.html">Legal</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html">FAQs</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
                 </ul>
+
+                <!-- Pure Veg Label & Logo -->
+                <div class="d-flex align-items-center ms-auto">
+                    <img src="assets/veg-icon.png" alt="Pure Veg" style="width: 24px; height: 24px;" class="me-2">
+                    <span class="text-light">Pure Veg</span>
+                </div>
             </div>
         </div>
     </nav>
 
     <!-- Contact Section -->
-    <section id="contact" class="container my-5">
-        <h2 class="text-center py-5">Contact Us</h2>
-        <div class="row">
-            <!-- Map View -->
-            <div class="col-md-6">
-                <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.4024842325456!2d72.85426747469138!3d19.175378149050464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b61a9c5f0b0f%3A0x3f9c08a93fcb7347!2s12-A%2C%20HF%20Society%20Rd%2C%20Saraswati%20Baug%2C%20Natwar%20Nagar%2C%20Jogeshwari%20East%2C%20Mumbai%2C%20Maharashtra%20400060!5e0!3m2!1sen!2sin!4v1712100012345" 
-                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
-                </iframe>
-            </div>
-            
-            <!-- Contact Details -->
-            <div class="col-md-6">
-                <p><i class="fas fa-map-marker-alt"></i><strong> Address:</strong> FLAT NO. 301, B-WING, 3 RD FLOOR, SWETA CHS, PLOT NO. 12, SARASWATI BAUG, BEHIND RAMESHWAR MANDIR, OPP. AMBOLI RAILWAY CROSSING, JOGESHWARI - EAST., MUMBAI, Maharashtra 400060</p>
-                <p><i class="fas fa-phone"></i><strong> Phone:</strong> (Devang Shah) +91 9821936866</p>
-                <p><i class="fas fa-phone"></i><strong> Phone:</strong> (Pinky Shah) +91 9870085044</p>
-                <p><i class="fas fa-envelope"></i><strong> Email:</strong> <a href="mailto:dhunkeefnc@gmail.com">dhunkeefnc@gmail.com</a></p>
-                <p><i class="fab fa-whatsapp" style="font-weight: 900; font-size: 1.2em;"></i><strong> WhatsApp: </strong><a href="https://wa.me/919821936866" class="btn btn-success">Order Now!</a></p>
-                <p><strong>Follow us:</strong>
-                    <a href="https://www.instagram.com/dhunkee_food?igsh=MTFzMm1ybm5yN2ptdw==" target="_blank" class="text-danger mx-2">
-                        <i class="fab fa-instagram fa-2x"></i>
-                    </a>
-                    <a href="https://www.facebook.com/share/1AAWU8SKc5/" target="_blank" class="text-primary mx-2">
-                        <i class="fab fa-facebook fa-2x"></i>
-                    </a>
-                </p>
+    <section id="contact" class="position-relative text-white" style="min-height: 100vh; overflow: hidden;">
+    
+        <!-- Background Slideshow -->
+        <div class="slideshow-container position-absolute top-0 start-0 w-100 h-100 z-0">
+            <div class="slide slide1"></div>
+            <div class="slide slide2"></div>
+            <div class="slide slide3"></div>
+        </div>
+    
+        <!-- Overlay -->
+        <div class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(0,0,0,0.8); z-index: 1;"></div>
+    
+        <!-- Foreground Content -->
+        <div class="container py-5 position-relative z-2">
+            <h2 class="text-center py-4">Contact Us</h2>
+            <div class="row">
+                <!-- Map View -->
+                <div class="col-md-6">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.4024842325456!2d72.85426747469138!3d19.175378149050464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b61a9c5f0b0f%3A0x3f9c08a93fcb7347!2s12-A%2C%20HF%20Society%20Rd%2C%20Saraswati%20Baug%2C%20Natwar%20Nagar%2C%20Jogeshwari%20East%2C%20Mumbai%2C%20Maharashtra%20400060!5e0!3m2!1sen!2sin!4v1712100012345" 
+                        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+                
+                <!-- Contact Details -->
+                <div class="col-md-6">
+                    <h3 class="text-warning">Address Details</h3>
+                    <p><i class="bi bi-geo-alt-fill me-2"></i> B-301, SWETA CHS, PLOT NO. 12, SARASWATI BAUG, OPP. AMBOLI RAILWAY CROSSING, JOGESHWARI - EAST, MUMBAI, Maharashtra 400060</p>
+                    <h3 class="text-warning">Contact Details</h3>
+                    <p><i class="bi bi-telephone-fill me-2"></i> (Devang Shah)<a href="tel:+919821936866" class="text-white text-decoration-none"> +91 9821936866</a></p>
+                    <p><i class="bi bi-telephone-fill me-2"></i> (Pinky Shah)<a href="tel:+9870085044" class="text-white text-decoration-none"> +91 9870085044</a></p>
+                    <p><i class="bi bi-envelope-fill me-2"></i><strong>Email:</strong> <a href="mailto:dhunkeefnc@gmail.com" class="text-white text-decoration-none">dhunkeefnc@gmail.com</a></p>
+                    <p><i class="bi bi-whatsapp me-2"></i><strong>WhatsApp:</strong> <a href="https://wa.me/919821936866" class="btn btn-success btn-sm">Order Now!</a></p>
+                    <h3 class="text-warning">Social Networks</h3>
+                    <div class="d-flex">
+                        <a href="https://www.facebook.com/share/1AAWU8SKc5/" target="_blank" class="btn btn-outline-light px-3 py-2 me-3"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.instagram.com/dhunkee_food?igsh=MTFzMm1ybm5yN2ptdw==" target="_blank" class="btn btn-outline-light px-3 py-2 me-3"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="text-light bg-dark py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Quick Links -->
+                <div class="col-md-3 mb-4">
+                    <h5 class="text-warning">QUICK LINKS</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="text-white text-decoration-none">About us</a></li>
+                        <li><a href="meals.html" class="text-white text-decoration-none">Meal Plan</a></li>
+                        <li><a href="legal.html" class="text-white text-decoration-none">Legal</a></li>
+                        <li><a href="faq.html" class="text-white text-decoration-none">FAQ's</a></li>
+                        <li><a href="contact.html" class="text-white text-decoration-none">Contact us</a></li>
+                    </ul>
+                    <div class="d-flex mt-3">
+                        <a href="https://www.facebook.com/share/1AAWU8SKc5/" target="_blank" class="btn btn-outline-light btn-sm me-2"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.instagram.com/dhunkee_food?igsh=MTFzMm1ybm5yN2ptdw==" target="_blank" class="btn btn-outline-light btn-sm"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Contact Us -->
+                <div class="col-md-5 mb-4">
+                    <h5 class="text-warning">CONTACT US</h5>
+                    <p><i class="bi bi-envelope-fill me-2"></i><a class="text-white text-decoration-none" href="mailto:dhunkeefnc@gmail.com"> dhunkeefnc@gmail.com</a></p>
+                    <p><i class="bi bi-geo-alt-fill me-2"></i> B-301, SWETA CHS, PLOT NO. 12, SARASWATI BAUG, OPP. AMBOLI RAILWAY CROSSING, JOGESHWARI - EAST., MUMBAI, Maharashtra 400060</p>
+                    <p><i class="bi bi-telephone-fill me-2"></i><a class="text-white text-decoration-none" href="tel:+919821936866"> (+91) 9821936866</a></p>
+                    <p><i class="bi bi-telephone-fill me-2"></i><a class="text-white text-decoration-none" href="tel:+919870085044"> (+91) 9870085044</a></p>
+                </div>
+
+                <!-- Business Hours -->
+                <div class="col-md-4">
+                    <h5 class="text-warning">BUSINESS HOURS</h5>
+                    <ul class="list-unstyled">
+                        <li class="d-flex justify-content-between"><span>Monday</span><span>11AM-8PM</span></li>
+                        <li class="d-flex justify-content-between"><span>Tuesday</span><span>11AM-8PM</span></li>
+                        <li class="d-flex justify-content-between"><span>Wednesday</span><span>11AM-8PM</span></li>
+                        <li class="d-flex justify-content-between"><span>Thursday</span><span>11AM-8PM</span></li>
+                        <li class="d-flex justify-content-between"><span>Friday</span><span>11AM-8PM</span></li>
+                        <li class="d-flex justify-content-between"><span>Saturday</span><span>11AM-8PM</span></li>
+                        <li class="d-flex justify-content-between"><span>Sunday</span><span>11AM-8PM</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+            <p class="mb-0">&copy; 2025 Dhunkee Food & Catering. All rights reserved.</p>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
