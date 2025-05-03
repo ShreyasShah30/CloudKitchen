@@ -15,7 +15,7 @@
 .hero {
     min-height: 100vh;
     background-color: #343a40;
-    padding-top: 70px; /* Adjust if navbar height is different */
+    padding-top: 100px; /* Adjust if navbar height is different */
     position: relative;
     color: white;
 }
@@ -28,4 +28,48 @@
     0%, 100%   { opacity: 0; }
     10%, 30%   { opacity: 1; }
     40%, 100%  { opacity: 0; }
+}
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    cursor: pointer;
+}
+
+.whatsapp-float img {
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-float img:hover {
+    transform: scale(1.1);
+}
+
+.pureveg-float {
+    position: fixed;
+    bottom: 110px; /* Just above WhatsApp */
+    right: 35px;
+    z-index: 999;
+}
+
+.pureveg-img {
+    width: 30px;
+    height: 30px;
+}
+
+.pureveg-label {
+    position: fixed;
+    bottom: 90px;
+    right: 25px;
+    z-index: 999;
+    font-size: 12px;
+    color: green;
+    font-weight: bold;
+}
+
+nav{
+    background-color: #023610;
 }
