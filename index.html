@@ -53,12 +53,12 @@
         <div class="container position-relative z-2 d-flex align-items-center h-100">
             <div class="row align-items-center w-100">
                 <!-- Logo -->
-                <div class="col-md-4 text-center mb-4 mb-md-0">
+                <div class="col-lg-4 text-center mb-4 mb-md-0">
                     <img src="assets/dhunkee_logo.png" alt="Dhunkee Logo" class="img-fluid" style="max-width: 300px; border-radius: 10%;">
                 </div>
 
                 <!-- Text Content -->
-                <div class="col-md-8" style="text-align: justify;">
+                <div class="col-lg-8 text-center text-lg-start">
                     <div class="hero-content p-3">
                         <h1>Dhunkee Food & Catering</h1>
                         <h5><strong><i>Don't wanna cook? Just book!</i></strong></h5>
@@ -113,29 +113,35 @@
     <!-- Enquiry Section-->
     <section>
         <div class="container my-5">
-            <div class="row text-center">
+            <div class="row">
                 <!-- Form Section -->
                 <div class="col-lg-6 mb-4">
                     <h2 class="text-center" style="color: #c76102;">ENQUIRE NOW</h2>
                     <form class="my-5" id="enquiryForm">
                     <div class="row g-3">
                         <div class="col-md-6">
+                            <label for="name" class="form-label d-block d-lg-none">Name</label>
                             <input type="text" class="form-control" id="name" placeholder="Enter your name">
                         </div>
                         <div class="col-md-6">
+                            <label for="email" class="form-label d-block d-lg-none">Email</label>
                             <input type="email" class="form-control" id="email" placeholder="Enter your email">
                         </div>
                         <div class="col-md-6">
-                            <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+                            <label for="phone" class="form-label d-block d-lg-none">Mobile Number</label>
+                            <input type="tel" class="form-control" id="phone" placeholder="Enter your mobile number">
                         </div>
                         <div class="col-md-6">
+                            <label for="location" class="form-label d-block d-lg-none">Location</label>
                             <input type="text" class="form-control" id="location" placeholder="Your location">
                         </div>
                         <div class="col-md-6">
-                            <input type="text" id="date" class="form-control" placeholder="Start of Service" onfocus="(this.type='date')" onblur="if(this.value===''){this.type='text'}">
-
+                            <label for="date" class="form-label d-block d-lg-none">Start of Service</label>
+                            <input type="date" id="date-desktop" class="form-control d-block d-lg-none" placeholder="Start of Service">
+                            <input type="text" id="date-mobile" class="form-control d-none d-lg-block" placeholder="Start of Service" onfocus="(this.type='date')" onblur="if(this.value===''){this.type='text'}">
                         </div>
                         <div class="col-md-6">
+                            <label for="submit" class="form-label text-white d-block d-lg-none">submit</label>
                             <button type="submit" id="submitBtn" class="btn px-4" style="width: 100%;background-color: #c76102; color: #FFFFFF;">Submit</button>
                         </div>
                     </div>
@@ -175,7 +181,7 @@
                 <div class="col-md-5 mb-4">
                     <h5 style="color: #F77F00;">CONTACT US</h5>
                     <p><i class="bi bi-envelope-fill me-2"></i><a class="text-white text-decoration-none" href="mailto:dhunkeefnc@gmail.com"> dhunkeefnc@gmail.com</a></p>
-                    <p><i class="bi bi-geo-alt-fill me-2"></i> B-301, SWETA CHS, PLOT NO. 12, SARASWATI BAUG, OPP. AMBOLI RAILWAY CROSSING, JOGESHWARI - EAST., MUMBAI, Maharashtra 400060</p>
+                    <p><i class="bi bi-geo-alt-fill me-2"></i> B-301, SWETA CHS, PLOT NO. 12, SARASWATI BAUG, OPP. AMBOLI RAILWAY CROSSING, JOGESHWARI - EAST, MUMBAI, MAHARASHTRA 400060</p>
                     <p><i class="bi bi-telephone-fill me-2"></i><a class="text-white text-decoration-none" href="tel:+919870085044"> (+91) 9870085044</a></p>
                     <p><i class="bi bi-telephone-fill me-2"></i><a class="text-white text-decoration-none" href="tel:+919821936866"> (+91) 9821936866</a></p>
                 </div>
