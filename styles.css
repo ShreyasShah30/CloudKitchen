@@ -113,3 +113,13 @@
     height: 250px;
 }
 }
+
+@media (max-width: 991px) and (min-width: 768px) {
+    #contact {
+        min-height: 65vh !important;
+    }
+
+    #home {
+        min-height: auto !important;
+    }
+}
