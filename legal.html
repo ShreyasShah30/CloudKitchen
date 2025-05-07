@@ -11,7 +11,7 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #c76102;">
         <div class="container">
             <img src="assets/dhunkee_logo.png" alt="Dhunkee Logo" class="img-fluid" style="max-width: 50px; margin-right: 10px; border-radius: 50%;">
             <a class="navbar-brand" href="index.html">Dhunkee Food & Catering</a>
@@ -57,10 +57,11 @@
             <span class="pb-1">TERMS AND CONDITIONS</span>
         </h2>
         <p class="text-justify">
-            1. These offers are valid from Monday to Saturday and do not apply on Sundays or public holidays. Deliveries must be made through our regular network.<br>
-            2. Meals cannot be carried forward beyond the specified days.<br>
+            1. We provide home-cooked pure veg meals.<br>
+            2. Meals can be served in offices, home, schools, hostels, hospitals, and more.<br>
             3. Dispatched meals will not be cancelled, returned & refunded under any circumstances.<br>
             4. Booking, Canceling or Pausing the meal, require a one-day advance notice till 8:00 pm. Canceled or paused meals will be carried forward.<br>
+            5. Avoid making payments to delivery personnel unless instructed otherwise.<br>
         </p>
     </section>
 
@@ -68,7 +69,13 @@
     <section class="container my-5">
         <ul class="nav nav-tabs nav-fill nav-underline" id="legalTabs" role="tablist">
             <li class="nav-item" role="presentation">
-                <button class="nav-link text-dark active" id="delivery-tab" data-bs-toggle="tab" data-bs-target="#delivery" type="button" role="tab">
+                <button class="nav-link text-dark active" id="guidelines-tab" data-bs-toggle="tab" data-bs-target="#guidelines" type="button" role="tab">
+                    <i class="bi bi-journal-text fs-4 me-1"></i>
+                    <span class="d-none d-lg-inline">Meal Related Guidelines</span>
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link text-dark" id="delivery-tab" data-bs-toggle="tab" data-bs-target="#delivery" type="button" role="tab">
                     <i class="bi bi-truck fs-4 me-1"></i>
                     <span class="d-none d-lg-inline">Delivery and Other Terms</span>
                 </button>
@@ -85,23 +92,28 @@
                     <span class="d-none d-lg-inline">Payment Details</span>
                 </button>
             </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link text-dark" id="guidelines-tab" data-bs-toggle="tab" data-bs-target="#guidelines" type="button" role="tab">
-                    <i class="bi bi-journal-text fs-4 me-1"></i>
-                    <span class="d-none d-lg-inline">Meal Related Guidelines</span>
-                </button>
-            </li>
         </ul>
         <div class="tab-content border border-top-0 p-4 bg-light" id="legalTabsContent">
-            
+            <!-- Meal Related Guidelines -->
+            <div class="tab-pane fade show active" id="guidelines" role="tabpanel">
+                <h5>Meal Related Guidelines</h5>
+                <ul>
+                    <li>We Do Follow <strong>Jain Tithi</strong> (Pancham, Aatham, Chaudas) Norms.</li>
+                    <li><strong>Customization</strong> options are available.</li>
+                    <li>Meals cannot be carried forward beyond the specified days.</li>
+                    <li>When placing your order, please indicate your meal preference: <strong>Jain, Half Jain (No Onion, No Garlic), or Regular.</strong> Additionally, specify whether you'd like <strong>Salad or Papad</strong>, and indicate your preference for <strong>sweetened or unsweetened</strong> Dal/Kadhi.</li>
+                </ul>
+            </div>
+
             <!-- Delivery and Other Terms -->
-            <div class="tab-pane fade show active" id="delivery" role="tabpanel">
+            <div class="tab-pane fade" id="delivery" role="tabpanel">
                 <h5>Delivery and Other Terms</h5>
                 <ul>
-                    <li>Our Delivery is done through mumbai's Dabbawalas Or borzo /dunzo, In unforeseen circumstances such as riots, heavy rains, or natural disasters, strikes by dabbawalas, Dabbawalas going on annual leave etc. delivery may be affected. You will be notified of any changes in delivery schedules, All meals cancelled by us will be carried forwarded automatically.</li>
-                    <li>Dhunkee's delivery partners would drop the customer's meal at the reception/security gate/Common area in case if they are not allowed to enter the building premises.</li>
-                    <li>In order to avoid spillage, the meals are cooled down at room temperature and then packed in microwave safe containers. Therefore customers may receive food at room temperature. It is recommended that in order to enjoy the meals, customers must re-heat the food before consumption.</li>
-                    <li>At Dhunkee's, we put in a lot of effort to ensure that your order reaches you on time and in an ideal condition. However, due to unforeseen events your order may reach you late and in rare cases may be undelivered. In such a circumstance, please contact the delivery guys or contact us. We assure you that every attempt will be made to rectify the situation or compensate you.</li>
+                    <li>Deliveries are fulfilled via <strong>Mumbai's Dabbawalas, Borzo, or Dunzo</strong>.</li>
+                    <li>In cases of <strong>natural disasters, heavy rains, riots, strikes, or Dabbawala leave</strong>, deliveries may be delayed or canceled. Affected customers will be notified, and <strong>canceled meals will be automatically carried forward.</strong></li>
+                    <li>If access to the building is restricted, meals will be left at the reception, security gate, or a common area.</li>
+                    <li>To <strong>avoid spillage</strong>, meals are cooled to room temperature and packed in <strong>microwave-safe containers</strong>. Reheating before consumption is recommended.</li>
+                    <li>Every effort is made to ensure <strong>timely and proper delivery.</strong> In rare cases of delay or non-delivery, please <strong>contact the delivery agent or support team.</strong> All issues will be addressed promptly with appropriate resolution.</li>
                 </ul>
             </div>
 
@@ -109,9 +121,9 @@
             <div class="tab-pane fade" id="deliverCharges" role="tabpanel">
                 <h5>Delivery Charges</h5>
                 <ul>
-                    <li>We offer lunch delivery for the Western Line in Mumbai, with an additional charge of Rs. 50 per order based on your location.</li>
+                    <li>We offer lunch delivery for the <strong>Western Line</strong> in Mumbai, with an additional charge of <strong>Rs. 50</strong> per order based on your location.</li>
                     <li>For lunch orders, if early delivery is needed or on Sundays and holidays, it will incur actual charges, and the delivery will be facilitated through Dunzo or Borzo, covering all locations within Mumbai.</li>
-                    <li>Chauvihar and dinner orders will be delivered at the actual charges across Mumbai.</li>
+                    <li><strong>Chauvihar and dinner</strong> orders will be delivered at the <strong>actual charges</strong> across Mumbai.</li>
                     <li>Please make sure your phone is accessible during the following time frame on the day you receive your order:
                         <ul>
                             <li>Lunch: 11:30 AM - 1:30 PM</li>
@@ -128,26 +140,13 @@
                 <ul>
                     <li>Payment methods include NEFT, IMPS, Cheque, Cash Deposit, Gpay or Paytm.</li>
                     <li>Cell Number: <strong>9870085044</strong> For Gpay Or Paytm</li>
-                    <li>Please share the screenshot after the payment on What'sApp Number 9821936866.</li>
+                    <li>Please share the screenshot after the payment on Whatsapp Number <strong>9821936866</strong>.</li>
                     <strong><li>Account Details:</li></strong>
                     - Account Number: 020901515668<br>
                     - Account Name: PINKY DEVANG SHAH<br>
                     - Bank: ICICI Bank, Indraprastha, Linking Road, Santacruz - West, Mumbai-400054, Maharashtra, India.<br>
                     - IFSC Code: ICIC0000209<br>
                     - Type: Savings Account<br>
-                </ul>
-            </div>
-
-            <!-- Meal Related Guidelines -->
-            <div class="tab-pane fade" id="guidelines" role="tabpanel">
-                <h5>Meal Related Guidelines</h5>
-                <ul>
-                    <li>Customization options are available.</li>
-                    <li>Meals can be served in offices, home, schools, hostels, hospitals, and more.</li>
-                    <li>We provide home-cooked pure veg meals.</li>
-                    <li>We Do Follow Jain Tithi ( Pancham, Aatham, Chaudas) Norms.</li>
-                    <li>When placing your order, please indicate your meal preference: Jain, Half Jain (No Onion, No Garlic), or Regular. Additionally, specify whether you'd like Salad or Papad, and indicate your preference for sweetened or unsweetened Dal/Kadhi.</li>
-                    <li>Avoid making payments to delivery personnel unless instructed otherwise</li>
                 </ul>
             </div>
         </div>
@@ -159,12 +158,12 @@
     </div>
 
     <!-- Footer -->
-    <footer class="text-light bg-dark py-5">
+    <footer class="text-light py-5" style="background-color: #004e04;";>
         <div class="container">
             <div class="row">
                 <!-- Quick Links -->
                 <div class="col-md-3 mb-4">
-                    <h5 class="text-warning">QUICK LINKS</h5>
+                    <h5 style="color: #F77F00;">QUICK LINKS</h5>
                     <ul class="list-unstyled">
                         <li><a href="about.html" class="text-white text-decoration-none">About us</a></li>
                         <li><a href="meals.html" class="text-white text-decoration-none">Meal Plan</a></li>
@@ -181,7 +180,7 @@
 
                 <!-- Contact Us -->
                 <div class="col-md-5 mb-4">
-                    <h5 class="text-warning">CONTACT US</h5>
+                    <h5 style="color: #F77F00;">CONTACT US</h5>
                     <p><i class="bi bi-envelope-fill me-2"></i><a class="text-white text-decoration-none" href="mailto:dhunkeefnc@gmail.com"> dhunkeefnc@gmail.com</a></p>
                     <p><i class="bi bi-geo-alt-fill me-2"></i> B-301, SWETA CHS, PLOT NO. 12, SARASWATI BAUG, OPP. AMBOLI RAILWAY CROSSING, JOGESHWARI - EAST, MUMBAI, MAHARASHTRA 400060</p>
                     <p><i class="bi bi-telephone-fill me-2"></i><a class="text-white text-decoration-none" href="tel:+919821936866"> (+91) 9821936866</a></p>
@@ -190,7 +189,7 @@
 
                 <!-- Business Hours -->
                 <div class="col-md-4">
-                    <h5 class="text-warning">BUSINESS HOURS</h5>
+                    <h5 style="color: #F77F00;">BUSINESS HOURS</h5>
                     <ul class="list-unstyled">
                         <li class="d-flex justify-content-between"><span>Monday</span><span>11AM-8PM</span></li>
                         <li class="d-flex justify-content-between"><span>Tuesday</span><span>11AM-8PM</span></li>
