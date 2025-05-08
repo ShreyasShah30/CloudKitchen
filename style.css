@@ -1,0 +1,44 @@
+.carousel-indicators{
+    left: 0;
+    top: auto;
+    bottom: -50px;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #333; /* dark grey */
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    opacity: 0.6;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.carousel-indicators .active {
+    opacity: 1;
+    background-color: #000; /* solid black for active indicator */
+    transform: scale(1.2);
+}
+
+.carousel-control-prev, .carousel-control-next {
+    width: 3rem;
+    height: 3rem;
+    background-color: grey;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.card {
+    padding-top: 20px;
+    margin: 0 4em;
+    border: 0;
+    min-height: 18vh;
+    background-color: wheat;
+}
+
+@media (max-width: 768px) {
+    .card {
+        min-height: 35vh;
+        background-color: wheat;
+    }
+}
