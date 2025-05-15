@@ -246,3 +246,12 @@
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
+
+.delivery-note ul li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+.delivery-note {
+  background-color: #f8fcff;
+  border-left: 5px solid #17a2b8;
+}
