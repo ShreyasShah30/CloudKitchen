@@ -255,3 +255,10 @@
   background-color: #f8fcff;
   border-left: 5px solid #17a2b8;
 }
+
+@media (max-width: 395px) {
+    .navbar-brand {
+        white-space: nowrap;
+        font-size: 0.9rem;
+    }
+}
