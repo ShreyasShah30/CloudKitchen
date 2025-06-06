@@ -262,3 +262,11 @@
         font-size: 0.9rem;
     }
 }
+
+footer a.text-decoration-none:hover {
+    text-decoration: underline !important;
+}
+
+.text-hover-underline:hover {
+    text-decoration: underline !important;
+}
