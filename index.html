@@ -264,10 +264,6 @@
                             <input type="text" class="form-control" id="name" placeholder="Enter your name">
                         </div>
                         <div class="col-md-6">
-                            <label for="email" class="form-label d-block d-lg-none">Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
-                        </div>
-                        <div class="col-md-6">
                             <label for="phone" class="form-label d-block d-lg-none">Mobile Number</label>
                             <input type="tel" class="form-control" id="phone" placeholder="Enter your mobile number">
                         </div>
@@ -276,13 +272,30 @@
                             <input type="text" class="form-control" id="location" placeholder="Your location">
                         </div>
                         <div class="col-md-6">
-                            <label for="date" class="form-label d-block d-lg-none">Start of Service</label>
-                            <input type="date" id="date" class="form-control d-block d-lg-none">
-                            <input type="text" id="date" class="form-control d-none d-lg-block" placeholder="Start of Service" onfocus="(this.type='date')" onblur="if(this.value===''){this.type='text'}">
+                            <label for="landmark" class="form-label d-block d-lg-none">Landmark</label>
+                            <input type="text" class="form-control" id="landmark" placeholder="Nearby landmark">
                         </div>
                         <div class="col-md-6">
+                            <label for="mealType" class="form-label d-block d-lg-none">Meal Type</label>
+                            <select class="form-select" id="mealType" required>
+                                <option selected disabled value="">Meal Type</option>
+                                <option value="Lunch">Lunch</option>
+                                <option value="Dinner">Dinner</option>
+                                <option value="Chauvihar">Chauvihar</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="mealPreference" class="form-label d-block d-lg-none">Meal Preference</label>
+                            <select class="form-select" id="mealPreference" required>
+                                <option selected disabled value="">Meal Preference</option>
+                                <option value="Jain">Jain</option>
+                                <option value="Non Jain (Regular)">Non Jain (Regular)</option>
+                                <option value="Half-Jain (No Onion & Garlic)">Half-Jain (No Onion & Garlic)</option>
+                            </select>
+                        </div>
+                        <div class="col-md-12 d-flex justify-content-center">
                             <label for="submit" class="form-label text-white d-block d-lg-none">submit</label>
-                            <button type="submit" id="submitBtn" class="btn px-4" style="width: 100%;background-color: #c76102; color: #FFFFFF;">Submit</button>
+                            <button type="submit" id="submitBtn" class="btn px-4" style="width: 30%;background-color: #c76102; color: #FFFFFF;">Submit</button>
                         </div>
                     </div>
                     </form>
