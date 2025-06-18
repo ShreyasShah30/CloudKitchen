@@ -71,15 +71,22 @@ document.addEventListener("DOMContentLoaded", function () {
     const mealNameDisplay = document.getElementById("mealNameDisplay");
     const mealPriceDisplay = document.getElementById("priceDisplay");
 
+    let selectedMeal = "";
+    let selectedPrice = "";
+
     orderButtons.forEach(btn => {
         btn.addEventListener("click", () => {
-        const meal = btn.getAttribute("data-meal");
-        const price = btn.getAttribute("data-price");
-        mealNameInput.value = meal;
-        mealPriceInput.value = price;
-        mealNameDisplay.value = meal;
-        mealPriceDisplay.value = `Rs.${price}.00`;
+            selectedMeal = btn.getAttribute("data-meal");
+            selectedPrice = btn.getAttribute("data-price");
         });
+    });
+
+    const modal = document.getElementById("orderModal");
+    modal.addEventListener("shown.bs.modal", () => {
+        mealNameInput.value = selectedMeal;
+        mealPriceInput.value = selectedPrice;
+        mealNameDisplay.value = selectedMeal;
+        mealPriceDisplay.value = `Rs.${selectedPrice}`;
     });
 
     const orderForm = document.getElementById("mealOrderForm");
