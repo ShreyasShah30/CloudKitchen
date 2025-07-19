@@ -270,3 +270,19 @@ footer a.text-decoration-none:hover {
 .text-hover-underline:hover {
     text-decoration: underline !important;
 }
+
+.form-check-input {
+    border: 1px solid #333 !important; /* darker border */
+    background-color: #fff;
+    width: 1.2em;
+    height: 1.2em;
+}
+
+.form-check-input:checked {
+    background-color: #ff7b00 !important;  /* dark fill */
+    border-color: #000 !important;      /* dark border */
+}
+
+.form-check-input:focus {
+    box-shadow: 0 0 2px #000;
+}

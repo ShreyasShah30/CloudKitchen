@@ -288,8 +288,8 @@
                             <!-- <p class="card-text">12 Phulka Roti, Vegetable, Vegetable/Pulses, Dal/Kadhi, Rice, Salad, Papad, Pickle, Sauf. Hearty vegetarian meal combo perfect for 2 — wholesome, filling, and packed with homely flavors!</p> -->
                             <ul class="mb-0 ps-3">
                                 <li>Lunch delivery on Mumbai's Western Line: <strong>₹50</strong> (may vary by location)</li>
-                                <li>Early lunch or orders on Sundays/holidays: Delivered via Dunzo/Borzo with actual charges</li>
-                                <li>Chauvihar and dinner orders: Delivered via Dunzo/Borzo across Mumbai at actual delivery cost</li>
+                                <li>Early lunch or orders on Sundays/holidays: Delivered via Porter/Borzo with actual charges</li>
+                                <li>Chauvihar and dinner orders: Delivered via Porter/Borzo across Mumbai at actual delivery cost</li>
                             </ul>
                         </div>
                     </div>
@@ -322,12 +322,13 @@
                 <div class="mb-3">
                     <label class="form-label fw-semibold">Your Location</label>
                     <input type="text" class="form-control" id="clientLocation" placeholder="Enter your delivery location" required>
+                    <small class="text-muted">* Add delivery location for exact delivery charges of the meal</small>
                 </div>
                 <div class="mb-3">
                     <label class="form-label fw-semibold">Landmark</label>
                     <input type="text" class="form-control" id="landmark" placeholder="Nearby landmark" required>
                 </div>
-                <div class="mb-3">
+                <!-- <div class="mb-3">
                     <label class="form-label fw-semibold">Meal Type</label>
                     <select class="form-select" id="mealType" required>
                     <option selected disabled value="">Choose...</option>
@@ -335,6 +336,24 @@
                     <option value="Chauvihar">Chauvihar</option>
                     <option value="Dinner">Dinner</option>
                     </select>
+                </div> -->
+                <div class="mb-3">
+                    <label class="form-label fw-semibold">Meal Type</label>
+                    <div id="mealTypeGroup">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Lunch" id="lunch">
+                            <label class="form-check-label" for="lunch">Lunch</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Chauvihar" id="chauvihar">
+                            <label class="form-check-label" for="chauvihar">Chauvihar</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Dinner" id="dinner">
+                            <label class="form-check-label" for="dinner">Dinner</label>
+                        </div>
+                    </div>
+                    <small id="mealTypeWarning" class="text-danger d-none">* Please select at least one meal type</small>
                 </div>
                 <div class="mb-3">
                     <label class="form-label fw-semibold">Meal Preference</label>
@@ -346,7 +365,7 @@
                     </select>
                 </div>
                 <div class="text-end">
-                    <button type="submit" class="btn btn-success">Confirm Order</button>
+                    <button type="submit" class="btn btn-success">Submit</button>
                 </div>
             </form>
         </div>

@@ -89,6 +89,19 @@ document.addEventListener("DOMContentLoaded", function () {
         mealPriceDisplay.value = `Rs.${selectedPrice}`;
     });
 
+    const mealTypeGroup = document.getElementById("mealTypeGroup");
+    const mealTypeWarning = document.getElementById("mealTypeWarning");
+
+    // Listen for any change in the checkbox group
+    mealTypeGroup.addEventListener("change", () => {
+        const mealTypeCheckboxes = document.querySelectorAll("#mealTypeGroup input[type='checkbox']");
+        const isAnyChecked = Array.from(mealTypeCheckboxes).some(cb => cb.checked);
+
+        if (isAnyChecked) {
+            mealTypeWarning.classList.add("d-none");
+        }
+    });
+
     const orderForm = document.getElementById("mealOrderForm");
     orderForm.addEventListener("submit", function (e) {
         e.preventDefault();
@@ -97,13 +110,25 @@ document.addEventListener("DOMContentLoaded", function () {
         const mealPrice = mealPriceInput.value;
         const location = document.getElementById("clientLocation").value;
         const landmark = document.getElementById("landmark").value;
-        const mealType = document.getElementById("mealType").value;
+        // const mealType = document.getElementById("mealType").value;
         const mealPreference = document.getElementById("mealPreference").value;
+        const mealTypeCheckboxes = document.querySelectorAll("#mealTypeGroup input[type='checkbox']");
+        const selectedMealTypes = Array.from(mealTypeCheckboxes)
+            .filter(cb => cb.checked)
+            .map(cb => cb.value);
+
+        const mealType = selectedMealTypes.join(", ");
+
+        const mealTypeWarning = document.getElementById("mealTypeWarning");
+        mealTypeWarning.classList.add("d-none");
 
         // Required field validation
-        if (!location || !landmark || !mealType || !mealPreference) {
-        alert("Please fill all the required fields before submitting.");
-        return;
+        if (!location || !landmark || selectedMealTypes.length === 0 || !mealPreference) {
+            if (selectedMealTypes.length === 0) {
+                mealTypeWarning.classList.remove("d-none");
+            }
+            alert("Please fill all the required fields before submitting.");
+            return;
         }
 
         // Confirmation prompt
